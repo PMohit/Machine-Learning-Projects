@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Heart Stroke App</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='ipl-favicon.ico') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Website Title -->
+    	<div class="container">
+            <h2 class='container-heading'><span class='heading_first'>Heart Stroke Prediction</span></h2>
+             
+    			<p>A Machine Learning Web App</p>
+    		</div>
+ 
+
+         
+                <!-- Prediction Area -->
+           <div class="prediction-area">
+
+            			<!-- Result -->
+            			<div class="results">
+            				<p class='result-p'>Result : {{ prediction_text  }} </p>
+            			</div>
+
+         </div>
+          </body>
+
+        <!-- Footer -->
+       <div class='footer'>
+           <div class="contact">
+               <a target="_blank" href="https://github.com/PMohit"><i class="fab fa-github fa-lg contact-icon"></i></a>
+             
+               <a target="_blank" href="https://www.linkedin.com/in/mohit-padhye-73b381154/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+           </div>
+           <p class='footer-description'>Made with ❤️ by Mohit.</p>
+       </div>
+
+    
+</html>
